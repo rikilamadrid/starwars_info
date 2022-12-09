@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1>Star Wars Info</h1>
+        <h1>Star Wars Almanac</h1>
         <Navbar setPage={setPage}/>
         <div class="content">
           { page === 'planets' ? 
