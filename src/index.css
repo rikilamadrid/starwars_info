@@ -5,16 +5,21 @@ body {
   color: #ddd;
   text-align: center;
 }
-.App{
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
   width: 960px;
   margin: 0 auto;
 }
-h1{
+
+h1 {
   color: #ffff57;
   font-size: 4em;
   letter-spacing: 2px;
 }
-button{
+
+button {
   margin: 0 10px;
   background: transparent;
   border: 3px solid #ccc;
@@ -24,28 +29,47 @@ button{
   font-size: 1.2em;
   cursor: pointer;
 }
-button:hover{
+
+button:hover {
   color: #fff;
   border-color: #fff;;
 }
-button:disabled{
+
+button:disabled {
   opacity: 0.2;
   cursor: not-allowed;
 }
-.content{
+
+.content {
   text-align: left;
 }
-.card{
+
+.card {
   padding: 8px 16px;
   background: #1b1b1b;
   margin: 16px 0;
   border-radius: 20px;
 }
-.card p{
+
+.card p {
   margin: 6px 0;
   color: #999;
 }
-.card h3{
+
+.card h3 {
   margin: 10px 0;
   color: #ffff57;
+}
+
+@media screen and (max-width: 1200px) {
+  .App {
+    width: 95%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
 }
